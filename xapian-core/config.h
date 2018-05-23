@@ -22,9 +22,9 @@
 /* Define to 1 if you have the <cxxabi.h> header file. */
 #define HAVE_CXXABI_H 1
 
-/* Define to 1 if you have the declaration of `log2', and to 0 if you don't.
-   */
-#define HAVE_DECL_LOG2 0
+/* Define to 1 if you have the declaration of `log2(double)', and to 0 if you
+   don't. */
+#define HAVE_DECL_LOG2 1
 
 /* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
    don't. */
@@ -32,67 +32,63 @@
 
 /* Define to 1 if you have the declaration of `__builtin_bswap16', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_BSWAP16 1
+#define HAVE_DECL___BUILTIN_BSWAP16 0
 
 /* Define to 1 if you have the declaration of `__builtin_bswap32', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_BSWAP32 1
+#define HAVE_DECL___BUILTIN_BSWAP32 0
 
 /* Define to 1 if you have the declaration of `__builtin_clz', and to 0 if you
    don't. */
-#define HAVE_DECL___BUILTIN_CLZ 1
+#define HAVE_DECL___BUILTIN_CLZ 0
 
 /* Define to 1 if you have the declaration of `__builtin_clzl', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_CLZL 1
+#define HAVE_DECL___BUILTIN_CLZL 0
 
 /* Define to 1 if you have the declaration of `__builtin_clzll', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_CLZLL 1
+#define HAVE_DECL___BUILTIN_CLZLL 0
 
 /* Define to 1 if you have the declaration of `__builtin_ctz', and to 0 if you
    don't. */
-#define HAVE_DECL___BUILTIN_CTZ 1
+#define HAVE_DECL___BUILTIN_CTZ 0
 
 /* Define to 1 if you have the declaration of `__builtin_ctzl', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_CTZL 1
+#define HAVE_DECL___BUILTIN_CTZL 0
 
 /* Define to 1 if you have the declaration of `__builtin_ctzll', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_CTZLL 1
-
-/* Define to 1 if you have the declaration of `__builtin_exp10', and to 0 if
-   you don't. */
-/* #undef HAVE_DECL___BUILTIN_EXP10 */
+#define HAVE_DECL___BUILTIN_CTZLL 0
 
 /* Define to 1 if you have the declaration of `__builtin_expect', and to 0 if
    you don't. */
-#define HAVE_DECL___BUILTIN_EXPECT 1
+#define HAVE_DECL___BUILTIN_EXPECT 0
 
 /* Define to 1 if you have the declaration of `__builtin_popcount', and to 0
    if you don't. */
-#define HAVE_DECL___BUILTIN_POPCOUNT 1
+#define HAVE_DECL___BUILTIN_POPCOUNT 0
 
 /* Define to 1 if you have the declaration of `__builtin_popcountl', and to 0
    if you don't. */
-#define HAVE_DECL___BUILTIN_POPCOUNTL 1
+#define HAVE_DECL___BUILTIN_POPCOUNTL 0
 
 /* Define to 1 if you have the declaration of `__builtin_popcountll', and to 0
    if you don't. */
-#define HAVE_DECL___BUILTIN_POPCOUNTLL 1
+#define HAVE_DECL___BUILTIN_POPCOUNTLL 0
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
 /* Define to 1 if you have the `exp10' function. */
-#define HAVE_EXP10 1
+/* #undef HAVE_EXP10 */
 
 /* Define to 1 if you have the <fcntl.h> header file. */
 #define HAVE_FCNTL_H 1
 
 /* Define to 1 if you have the `fdatasync' function. */
-#define HAVE_FDATASYNC 1
+/* #undef HAVE_FDATASYNC */
 
 /* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
@@ -137,7 +133,7 @@
 #define HAVE_NANOSLEEP 1
 
 /* Define to 1 if you have the `posix_fadvise' function. */
-#define HAVE_POSIX_FADVISE 1
+/* #undef HAVE_POSIX_FADVISE */
 
 /* Define if pread is available on this system */
 #define HAVE_PREAD 1
@@ -206,7 +202,7 @@
 #define HAVE_SYS_UTSNAME_H 1
 
 /* Define to 1 if you have the 'timer_create' function. */
-#define HAVE_TIMER_CREATE 1
+/* #undef HAVE_TIMER_CREATE */
 
 /* Define to 1 if you have the `times' function. */
 #define HAVE_TIMES 1
@@ -218,10 +214,10 @@
 /* #undef HAVE_UUID_H */
 
 /* Define to 1 if you have the 'uuid_unparse_lower' function. */
-/* #undef HAVE_UUID_UNPARSE_LOWER */
+#define HAVE_UUID_UNPARSE_LOWER 1
 
 /* Define to 1 if you have the <uuid/uuid.h> header file. */
-/* #undef HAVE_UUID_UUID_H */
+#define HAVE_UUID_UUID_H 1
 
 /* Define if a suitable valgrind is installed */
 /* #undef HAVE_VALGRIND */
@@ -236,10 +232,13 @@
 /* #undef HAVE__PUTENV_S */
 
 /* Define if you have '_sys_errlist' and '_sys_nerr' */
-#define HAVE__SYS_ERRLIST_AND__SYS_NERR 1
+/* #undef HAVE__SYS_ERRLIST_AND__SYS_NERR */
+
+/* Define to 1 if you have the `__builtin_exp10' function. */
+/* #undef HAVE___BUILTIN_EXP10 */
 
 /* Define to 1 if you have the `__exp10' function. */
-/* #undef HAVE___EXP10 */
+#define HAVE___EXP10 1
 
 /* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
@@ -305,13 +304,13 @@
 #define STDC_HEADERS 1
 
 /* Define to 1 if strerror_r returns char *. */
-#define STRERROR_R_CHAR_P 1
+/* #undef STRERROR_R_CHAR_P */
 
 /* Define to an unsigned type equivalent to off_t */
 #define UNSIGNED_OFF_T unsigned long
 
 /* Define to 1 to read UUID from '/proc/sys/kernel/random/uuid' */
-#define USE_PROC_FOR_UUID 1
+/* #undef USE_PROC_FOR_UUID */
 
 /* Define if the testsuite can use RTTI */
 #define USE_RTTI 1
